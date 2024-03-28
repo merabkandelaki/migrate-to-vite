@@ -1,0 +1,64 @@
+.fish {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 21px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 21px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 8px;
+}
+
+.name {
+    color: red;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.show {
+    width: 120px;
+    height: 37px;
+    border: none;
+    border-radius: 15px;
+    background-color: brown;
+    font-size: 19px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.like {
+    border: none;
+    background-color: none;
+    font-size: 21px;
+    cursor: pointer;
+}
