@@ -1,9 +1,8 @@
 import React from 'react';
 import FishCard from '../FishCard/FishCard';
-import { fishes } from "../../data/fishes";
 import styles from "./FishesWrapper.module.css";
 
-const FishesWrapper = () => {
+const FishesWrapper = ({ fishes }) => {
   console.log("fishes", fishes);
   return (
     <div className={styles.fishes_list}>
@@ -13,7 +12,7 @@ const FishesWrapper = () => {
           return (
             <FishCard
               key={index}
-              img={fish.illustrationPhoto.src}
+              img={fish?.illustrationPhoto?.src || fish?.img}
               name={fish.name}
               region={fish.region}
               scientificName={fish.scientificName}

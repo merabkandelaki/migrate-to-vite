@@ -7,7 +7,7 @@
     gap: 21px;
     border: none;
     border-radius: 25px;
-    background-color: white;
+    background-color: cornsilk;
 }
 
 img {
@@ -23,15 +23,10 @@ img {
     flex-direction: column;
     gap: 10px;
     font-size: 21px;
-    background-color: antiquewhite;
+    color: white;
+    background-color: rgb(53, 48, 48);
     border: none;
     border-radius: 8px;
-}
-
-.name {
-    color: red;
-    font-weight: bold;
-    font-size: 21px;
 }
 
 .show {
@@ -39,11 +34,17 @@ img {
     height: 37px;
     border: none;
     border-radius: 15px;
-    background-color: brown;
+    background-color: blue;
     font-size: 19px;
     font-weight: bold;
     color: aliceblue;
     cursor: pointer;
+}
+
+.modal_name {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
 }
 
 .stars {
@@ -56,9 +57,18 @@ img {
     font-weight: bold;
 }
 
+.emoji_star {
+    font-size: 24px;
+    display: inline-block;
+    background-color: transparent;
+    color: inherit;
+}
+
 .like {
+    font-size: 24px;
+    display: inline-block;
+    background-color: transparent;
+    color: inherit;
     border: none;
-    background-color: none;
-    font-size: 21px;
     cursor: pointer;
 }

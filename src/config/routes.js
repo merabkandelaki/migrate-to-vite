@@ -1,6 +1,7 @@
-import { HOME, FISHES } from "../constants/routes";
+import { HOME, FISHES, ADMIN } from "../constants/routes";
 import Home from "../pages/Home/Home";
 import Fishes from "../pages/Fishes/Fishes";
+import Admin from "../pages/Admin/Admin";
 import NotFound from "../pages/NotFound/NotFound";
 
 const routes = [
@@ -11,6 +12,10 @@ const routes = [
   {
     path: FISHES,
     Component: Fishes,
+  },
+  {
+    path: ADMIN,
+    Component: Admin,
   },
   {
     path: "*",

@@ -1,4 +1,4 @@
-export const fishes = [
+export const initialFishes = [
   {
     info: "Bottomfish fishing operations, typically using weighted lines and baited hooks, do not have adverse impacts to the habitat.",
     region: "Pacific Islands",

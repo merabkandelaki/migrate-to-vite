@@ -28,18 +28,9 @@ const FishCard = ({ img, name, region, scientificName }) => {
       <div className={styles.fish}>
         <img className={styles.img} src={img} alt={name} />
         <div className={styles.description}>
-          <p className={styles.name}>
-            <span className={styles.span}>Name: </span>
-            {name}
-          </p>
-          <p>
-            <span>Region: </span>
-            {region}
-          </p>
-          <p>
-            <span>Scientificname: </span>
-            {scientificName}
-          </p>
+          <p>Name: {name}</p>
+          <p>Region: {region}</p>
+          <p>Scientificname: {scientificName}</p>
           <button className={styles.show} onClick={() => showFish()}>
             Show
           </button>
@@ -48,12 +39,10 @@ const FishCard = ({ img, name, region, scientificName }) => {
       {isShowing && (
         <Modal onClose={() => setIsShowing(false)}>
           <img src={img} alt={name}></img>
-          <p className={styles.name}>
-            <span className={styles.span}>Name: </span>
-            {name}
-          </p>
+          <p className={styles.modal_name}>Name: {name}</p>
           <span className={styles.stars}>
-            Stars: {renderStars()} {stars}
+            Stars: {renderStars()}
+            <span className={styles.emoji_star}>{stars}</span>
             <button
               className={styles.like}
               onClick={() => {
